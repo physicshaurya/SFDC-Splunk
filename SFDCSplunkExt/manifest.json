@@ -1,0 +1,48 @@
+{
+	"name": "SFDC Splunk Wizard",
+	"version": "1.4.0",
+	"manifest_version": 2,
+    "options_page": "options.html",
+	"description": "A google chrome plugin to assist Core SFDC Support with Splunk investigations.",
+	"short_name":"SFS",
+	"browser_action": {
+		"default_title": "SFDC Splunk",
+		"default_popup": "launcher.html"
+	},
+	"icons": {
+        "16": "SalesforceSplunkLogo.png",
+        "48": "SalesforceSplunkLogo.png",
+		"128": "SalesforceSplunkLogo.png"
+	},
+	"content_scripts": [{
+	    "matches": ["https://*.salesforce.com/*"],
+	    "js": ["jquery-1.11.3.js","launcher.js"],
+		"run_at": "document_start"
+	}],
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+	"permissions": [
+		"tabs",
+        "notifications",
+        "http://*/*",
+        "https://*/*",
+		"storage",
+        "tabCapture",
+	    "activeTab",
+	    "pageCapture",
+	    "cookies",
+        "contextMenus"
+	],
+    "web_accessible_resources": [ 
+    "*.png", 
+    "*.ttf",
+    "*.woff2",
+    "*.eot",
+    "*.woff"
+    ],
+
+    "background": {
+      "persistent": false,
+      "scripts": ["context.js"]
+  }
+
+}

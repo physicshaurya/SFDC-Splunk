@@ -1,0 +1,15 @@
+.outerDiv {
+    width:400px;
+    height: 240px;
+    color:white;
+    background-color:#0070d2;
+    font:normal 12px Arial;
+    line-height:1.6em;
+    text-align:left;
+}
+
+.innerDiv {
+    color:white;
+    width:90%;
+    height:90%;
+}

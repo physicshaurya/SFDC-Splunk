@@ -1,0 +1,72 @@
+<html>
+
+<head>
+    <title>Performance Splunk</title>
+    <script src="jquery-1.11.3.js"></script>
+    <script src="skillchecker.js"></script>
+    <script src="launcher.js"></script>
+    <link type="text/css" rel="stylesheet" href="layout.css">
+    <link type="text/css" rel="stylesheet" href="slds012/assets/styles/salesforce-lightning-design-system.min.css">
+    <script type="text/javascript" src="tooltip.js"></script>
+</head>
+
+<body>
+
+    <div id="imageHeader" align="center">
+        <img src="Salesforce_Logo_RGB_1797c0_8_13_14.png" /> + <img src="splunk-logo_0.png" /> <a style="position: relative; left: 80px; bottom: 2px;" tabindex="-1" href="options.html"><img style="width:30px; height:30px;" src="gearicon.png" /></a>
+    </div>
+    <hr style="margin-top: 7px; margin-bottom: -5px;">
+    <div id="errorMessage" class="slds-notify slds-notify--alert slds-theme--error slds-hide slds-m-bottom--small" role="alert" style="border-radius:0.25rem;">
+        <h2>Error Alert</h2>
+    </div>
+
+    <div id="validationMessage" class="slds-notify slds-notify--alert slds-theme--failure slds-hide slds-m-bottom--small" role="alert" style="border-radius:0.25rem;">
+        <h2>Validation Alert</h2>
+    </div>
+
+    <div class="slds-form-element slds-is-required slds-m-bottom--small">
+        <span>Source Instance*</span>
+        <table border="0">
+            <tr>
+                <td align="left">
+                    <input class="slds-input slds-is-required" type="text" id="instance1" title="Source Instance">
+                </td>
+
+            </tr>
+        </table>
+    </div>
+
+    <div class="slds-form-element slds-is-required slds-m-bottom--small">
+        <span>Organization ID*</span>
+        <input class="slds-input slds-is-required" type="text" id="org" title="Organization ID">
+    </div>
+
+    <div class="slds-form-element slds-m-bottom--small">
+        <span>User ID (optional)</span>
+        <input class="slds-input" type="text" id="user" title="User ID">
+    </div>
+
+    <div class="slds-form-element slds-is-required slds-m-bottom--small">
+        <span>Earliest Time (UTC) mm/dd/yyyy:HH:MM:SS
+    <br>
+    Or in units (ex: -1h)* <span id="fineprint">(units required for APT dashboard)</span>
+        </span>
+        <input class="slds-input slds-is-required" type="text" id="earliest" title="Earliest Time(UTC)">
+    </div>
+
+    <div class="slds-form-element slds-m-bottom--small">
+        <span>Latest Time (UTC) (leave blank for current)</span>
+        <input class="slds-input" type="text" id="latest" title="Latest Time(UTC) - current if blank">
+    </div>
+
+    <div class="slds-form-element slds-is-required slds-m-bottom--small" style="display:none">
+        <span>Recent Activity Interval (min)*</span>
+        <input class="slds-input slds-is-required" type="text" id="cutoff" title="Cutoff Interval (min)" value="5">
+        <input type="hidden" id="sparkline_span">
+    </div>
+    
+<!-- this is where the buttons start --> 
+
+</body>
+
+</html>

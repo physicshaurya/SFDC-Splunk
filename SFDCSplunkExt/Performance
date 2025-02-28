@@ -1,0 +1,219 @@
+<table border="0">
+        <tr>
+            <td align="center">
+                <button id="view_aptdash" data-id="view_aptdash" class="slds-button slds-button--brand sbtButton buttonText" title="">APT Dashboard</button>
+            </td>
+            <td class="spacer">
+            </td>
+            <td align="center">
+                <span class="tooltip_displayGack">
+                <button id="view_gacksPanel" data-id="view_gacksPanel" class="slds-button slds-button--brand sbtButton buttonText ui-focus" title="">Check Gacks</button>
+            </span>
+                <div id="largeGack">
+                    <div class="ttipGack">
+                        <span class="noteGack">
+                        <table align="center" border="0" style="width: 97%; margin-bottom: 5px;">
+                            <tr class="firstvert">
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button id="view_gacks" data-id="view_gacks" class="slds-button slds-button--brand sbtButton buttonText" title="">All Gacks </button>
+                                </td>
+                            </tr>
+                        </table>
+                        <table align="center" border="0" style="width: 97%; margin-bottom: 5px;">
+                            <tr>
+                                <td width="160px;">
+                                    <button id="view_classicUiGacks" data-id="view_classicUiGacks" class="slds-button slds-button--brand sbtButton buttonText" title="">Classic UI</button>
+                                </td>                                 
+                                <td class="spacer">
+                                </td>
+                                <td>
+                                    <button id="view_LEXGacks" data-id="view_LEXGacks" class="slds-button slds-button--brand sbtButton buttonText" title="">LEX</button>
+                                </td>                            
+                            </tr>
+
+                        </table>
+                        <table align="center" border="0" style="width: 97%; margin-bottom: 5px;">
+                            <tr class="vertspacer2">
+                                <td style="padding-left: 5px;">
+                                Advanced Search:
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input class="slds-input gackIdSearch" type="text" id="gackIdSearch" title="Gack ID" placeholder="Gack ID">
+                                </td>
+                            </tr>
+                            <tr class="vertspacer">
+                            </tr>
+                            <tr>
+                                <td style="width: 160px;">
+                                    <input class="slds-input stacktraceIdSearch" type="text" id="stacktraceIdSearch" title="Stacktrace ID" placeholder="Stacktrace ID">
+                                </td>
+                            </tr>
+                            <tr class="vertspacer">
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button id="view_customGackSearch" data-id="view_customGackSearch" class="slds-button slds-button--brand sbtButton buttonText">Search</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td align="center" style="padding-top: 5px;">
+                <span class="tooltip_display1">
+                <button id="view_runTimes" data-id="view_runTimes" class="slds-button slds-button--brand sbtButton buttonText ui-focus" title="">Check runTimes</button>
+            </span>
+                <div id="large">
+                    <div class="ttip1">
+                        <span class="note">
+                        <table align="center" border="0" style="width: 97%; margin-bottom: 5px;">
+                            <tr class="firstvert">
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button id="view_10s" data-id="view_10s" class="slds-button slds-button--brand sbtButton buttonText" title="">10 Seconds</button>
+                                </td>
+                                <td class="spacer">
+                                </td>
+                                <td>
+                                    <button id="view_30s" data-id="view_30s" class="slds-button slds-button--brand sbtButton buttonText" title="">30 Seconds</button>
+                                </td>
+                            </tr>
+                            <tr class="vertspacer">
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button id="view_60s" data-id="view_60s" class="slds-button slds-button--brand sbtButton buttonText" title="">60 Seconds</button>
+                                </td>
+                                <td class="spacer">
+                                </td>
+                                <td>
+                                    <button id="view_90s" data-id="view_90s" class="slds-button slds-button--brand sbtButton buttonText" title="">90 Seconds</button>
+                                </td>
+                            </tr>
+                            <tr class="vertspacer">
+                            </tr>
+                            <tr>
+                                <td style="width: 160px;">
+                                    <input class="slds-input customSeconds" type="text" id="customSeconds" title="Specify a custom time in seconds" placeholder="Custom (seconds)">
+                                </td>
+                                <td class="spacer">
+                                </td>
+                                <td>
+                                    <button id="view_customTime" data-id="view_customTime" class="slds-button slds-button--brand sbtButton buttonText">Custom</button>
+                                </td>
+                            </tr>
+                            <tr class="vertspacer2">
+                                <td style="padding-left: 5px;">
+                                Other Timeouts:
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button id="view_relatedList" data-id="view_relatedList" class="slds-button slds-button--brand sbtButton buttonText" title="">Related Lists</button>
+                                </td>
+                                <td class="spacer">
+                                </td>
+                                <td>
+                                    <button id="" data-id="" class="slds-button slds-button--brand sbtButton buttonText" title="">Sessions</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </span>
+                    </div>
+                </div>
+            </td>
+            <td class="spacer">
+            </td>
+            <td align="center" style="padding-top: 5px;">
+                <button id="view_restarts" data-id="view_restarts" class="slds-button slds-button--brand sbtButton buttonText" title="">Appserver Restarts</button>
+            </td>
+        </tr>
+        <tr>
+            <td align="center" style="padding-top: 5px;">
+                <button id="view_basic" data-id="view_basic" class="slds-button slds-button--brand sbtButton buttonText" title="">Basic Query</button>
+            </td>
+            <td class="spacer">
+            </td>
+            <td align="center" style="padding-top: 5px;">
+                <span class="tooltip_displayAdv">
+                <button id="view_advanced" data-id="view_advanced" class="slds-button slds-button--brand sbtButton buttonText ui-focus" title="">Advanced Queries</button>
+            </span>
+                <div id="largeAdv">
+                    <div class="ttipAdv">
+                        <span class="noteAdv">
+                        <table align="center" border="0" style="width: 97%; margin-bottom: 5px;">
+                            <tr class="firstvert">
+                            </tr>
+                            <tr class="vertspacer2">
+                                <td style="padding-left: 5px;">
+                                    Buffalo Splunk:
+                                
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    
+                                    <input class="slds-input" type="text" id="instance2" title="Target Instance (for FFX only)" placeholder="Target Instance (for FFX only)">
+                                </td>
+                            </tr>
+                            <tr class="vertspacer">
+                            </tr>
+                            <tr>
+                                <td>
+                                <input class="slds-input slds-is-required" type="text" id="cutoff2" title="Cutoff Interval (min)" placeholder="Cutoff Interval (min)">
+                                <input type="hidden" id="sparkline_span">
+                                </td>
+                            </tr>
+                            
+                            <tr class="vertspacer">
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button id="view_tables" data-id="Splunk Quer" class="slds-button slds-button--brand sbtButton buttonText" title="">Tables</button>
+                                </td>
+                            </tr>
+                        </table>
+                        <table align="center" border="0" style="width: 97%; margin-bottom: 5px;">
+                            <tr>
+                                <td width="160px;">
+                                    <button id="view_ffx" data-id="view_ffx" class="slds-button slds-button--brand sbtButton buttonText" title="">FFX</button>
+                                </td>                                 
+                                <td class="spacer">
+                                </td>
+                                <td>
+                                    <button id="view_chunks" data-id="view_chunks" class="slds-button slds-button--brand sbtButton buttonText" title="">Buckets</button>
+                                </td>                            
+                            </tr>
+
+                        </table>
+                        <table align="center" border="0" style="width: 97%; margin-bottom: 5px;">
+                            <tr class="vertspacer2">
+                                <td style="padding-left: 5px;">
+                                T3 Queries:
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="160px;">
+                                    <button id="view_PD" data-id="view_PD" class="slds-button slds-button--brand sbtButton buttonText" title="">PD</button>
+                                </td>                                 
+                                <td class="spacer">
+                                </td>
+                                <td>
+                                    <button id="view_RB" data-id="view_RB" class="slds-button slds-button--brand sbtButton buttonText" title="">Recycle Bin</button>
+                                </td>                            
+                            </tr>
+                        </table>
+                    </span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
